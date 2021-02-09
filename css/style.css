@@ -18,6 +18,11 @@ body {
     
 }
 
+/*Logo Styles*/
+
+.logo {
+    margin-left: 20px;
+}
 
 /* Header Styles*/
 
@@ -52,29 +57,31 @@ nav a {
     color: var(--accent-yellow);
 }
 
+main {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 span {
     font-weight: bold;
 }
 
-.grid {
+/* Project Grid */
+
+.projects{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
 }
 
-.grid article {
-    flex: 1 1 33.33%;
-    justify-content: center;
-    align-items: center;
+.project-grid {
+    width: 33%;
     padding: 20px;
 }
-
-
-
-
-
 
 
 /* Media Query*/
