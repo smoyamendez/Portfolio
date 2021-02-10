@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark: #484e4a;
+    --medium: #C5C1BB;
+    --light: #EFF0EB;
+    --accent-yellow: #EACB48 ;
+    --accent-blue:#00A099;
+}
+body {
+    background-color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light);
+    
+}
+ 
+
+/* Header Styles*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: var(--light);
+    margin: 10px;
+    padding: 0px;
+}
+
+/* Nav Styles*/
+
+nav {
+    margin: 20px;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-yellow);
+}
+
+
+/*main page setup*/
+
+main {
+     margin: 64px 40px 20px 40px;
+}
+
+/* Left Side Section Header Styles */
+
+h2 {
+    font-size: 48px;
+    color: var(--accent-yellow);
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin-right: 50px;
+}
+
+/* About me section */
+.aboutme {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.headshot {
+    border-radius: 12px;
+    border: 5px solid var(--accent-yellow);
+}
+
+.aboutme p {
+    font-size: 20px;
+    margin: auto 50px;
+
+}
+
+/* Project section */
+
+.projects {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.project-block-large{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--accent-yellow);
+    border-radius: 12px;
+    padding: 12px;
+    width: 50%;
+}
+
+.project-block{
+    display: flex;
+    flex-direction: column;
+    order:2;
+    /* justify-content: center;
+    align-items: center; */
+    border: 5px solid var(--accent-yellow);
+    border-radius: 12px;
+    padding: 12px;
+    
+}
+
+.project-header {
+
+}
+
+.horiseon {
+    width: 50%;
+}
+
+/* Contact section */
+
+.contact {
+    display:flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contact ul {
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+}
+.contact ul li  {
+    display: inline;
+    font-size: 24px;
+    margin: 20px;
+}
+
+
+
+/* @media screen and (max-width: 1024) {
+    header {
+        display: block;
+    }
+} */
+
+
+
+
