@@ -16,6 +16,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--light);
     font-size: 16px;
+    max-width: 100%;
 }
  
 /* Header Styles*/
@@ -73,6 +74,7 @@ main > article {
 }
 
 #aboutme, #projects, #contact {
+    width: 100%;
     padding-left: 120px;
     padding-right: 80px;
 }
@@ -107,9 +109,13 @@ h2 {
 }
 
 #aboutme p {
-    font-size: 20px;
+    font-size: 28px;
     margin: auto 50px;
+    text-align: block;
+}
 
+#aboutme p strong {
+    color: var(--accent-yellow);
 }
 
 /* Project section */
@@ -154,6 +160,8 @@ h2 {
 }
 
 .project-block-large img {
+    max-height: 100%;
+    min-width: 
    object-fit: fill;
 }
 
@@ -186,5 +194,19 @@ h2 {
 
 
 
-
-
+@media screen and (max-width: 768px) {
+    
+    #aboutme, #projects, #contact {
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0px;
+    }
+    
+    @media screen and (max-width: 500px) {
+        
+        #aboutme, #projects, #contact {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 80px 0px;
+        }
