@@ -54,6 +54,9 @@ nav a {
     color: var(--accent-yellow);
 }
 
+nav a:hover {
+    color: var(--accent-blue);
+}
 
 
 /*main page setup*/
