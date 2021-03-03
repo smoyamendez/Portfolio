@@ -72,7 +72,7 @@ main > article {
     margin: 80px 0px;
 }
 
-#aboutme, #projects, #contact {
+#aboutme, #projects, #contact, #resume {
     width: 100%;
     padding-left: 120px;
     padding-right: 80px;
@@ -182,6 +182,24 @@ h3 {
     color: var(--light);
 }
 
+/* Resume section */
+
+#resume {
+    display:flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#resume a {
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 1400px) {
     
@@ -194,16 +212,18 @@ h3 {
     }
 
 }
+
+
 @media screen and (max-width: 875px) {
     
-    #aboutme, #projects, #contact {
+    #aboutme, #projects, #contact, #resume {
         flex-direction: column;
         margin: 0 auto;
         padding: 0 auto;
     }
     #aboutme img {
-        width: 75%;
-        height: 75%;
+        width:50%;
+        height: 50%;
         margin: 0px 0px 20px 0px;
         padding: 0 auto;
     }
@@ -221,18 +241,31 @@ h3 {
         flex-basis: 25%;
         overflow: hidden;
     }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        font-size: 40px;
+    }
 }
     
-/* @media screen and (max-width: 500px) {
-        
-    #aboutme, #projects, #contact {
+@media screen and (max-width: 500px) {
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #aboutme, #projects, #contact, #resume {
         flex-direction: column;
         margin: 0 auto;
         padding: 0 auto;
     }
 
     h2 {
-        font-size: 96px;
+        font-size: 75px;
         color: var(--accent-yellow);
         writing-mode: horizontal-tb;
         display: flex;
@@ -245,11 +278,12 @@ h3 {
     #aboutme img {
         width: 100%;
         height: 100%;
-        margin: 0px 0px 20px 0px;
+        margin: 10px 0px 20px 0px;
         padding: 0 auto;
     }
     #aboutme p {
         font-size: 1.7rem;
+        width: 300px;
         margin: 0 auto;
         padding: 0 auto;
     }
@@ -262,4 +296,8 @@ h3 {
         flex-basis: 25%;
         overflow: hidden;
     }
-    } */
+
+    #contact ul li, #resume a {
+        font-size: 1.7rem;
+    }
+    }
