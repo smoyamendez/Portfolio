@@ -157,6 +157,15 @@ h3 {
     padding: 20px;
 }
 
+.repoLink {
+    font-size:36px;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.repoLink:hover {
+    color: var(--accent-blue);
+}
 
 /* Contact section */
 
@@ -184,7 +193,7 @@ h3 {
 
 /* Resume section */
 
-#resume {
+/* #resume {
     display:flex;
     flex-direction: row;
     margin-top: 40px;
@@ -197,8 +206,32 @@ h3 {
     padding-bottom: 10px;
     text-decoration: none;
     color: var(--light);
+} */
+
+/* RESUME PAGE */
+
+#resumeDownload {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+#resumeDownload a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 32px;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: var(--accent-blue);
+    padding: 10px;
+}
+
+#resumeImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1400px) {
