@@ -229,6 +229,10 @@ h3 {
     padding: 10px;
 }
 
+#resumeDownload a:hover {
+    color: var(--accent-yellow);
+}
+
 #resumeImg {
     display: flex;
     flex-direction: column;
