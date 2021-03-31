@@ -52,10 +52,15 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: var(--accent-yellow);
+    border: 4px solid var(--accent-blue);
+    border-radius: 5px;
+    padding: 8px;
+
 }
 
 nav a:hover {
     color: var(--accent-blue);
+    border: 4px solid var(--accent-yellow);
 }
 
 
