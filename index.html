@@ -2,135 +2,206 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMM Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMM Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/2aa616d50e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-
-  <main>
     <header>
-      <a href="./index.html"><img src="assets/images/sommercode.png" alt="Logo">
-      </a>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#aboutme">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="header-box">
+            <div><a href="./index.html"><img class="logo" src="assets/images/sommercode.png" alt="Logo"></a></div>
+    
+            <nav>
+    
+                <ul>
+                    <li>
+                        <a href="#aboutme">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="resume.html">Resume</a>
+                    </li>
+                </ul>
+    
+            </nav>
+        </div>
     </header>
 
-    <article>
-      <h2>
-        About
-      </h2>
-      <section id="aboutme">
+    <main>
 
-        <img src="assets/images/headshot.jpg" width="100%" height="100%" alt="Sommer Moya-Mendez">
+        <div id="about" class="about-header">
+            <h2 id='about-header'>
+                About
+            </h2>
+        </div>
 
-        <p>
-          Hello, my name is <strong>Sommer Moya-Mendez</strong>! I'm a current student of the UNCC Full Stack Web
-          Developer Program. Originally, I come from an
-          artistic background with my BFA in Commercial Photography. I have been in the printing and design field since
-          graduating in 2013. I started to code
-          websites on my own and it has become my passion. Excited to transition into this new career!
-        </p>
+        <div class="about-main">
+            
+            <div class="about-block">
+                <!-- <img src="assets/images/headshot.jpg" alt="Sommer Moya-Mendez" width="100%" height="auto"> -->
+                <p>
+                    <span>
+                        Hello! My name is
+                    </span>
+                    <span><strong class="strong-name">Sommer Moya-Mendez</strong></span>
+                </p>
+                <p>
+                    After dabbling in basic HTML/CSS for a year, I decided to take the plunge and explore a new career
+                    in web development. Currently interested in full stack entry level opportunities.
+                </p>
+            </div>
+        </div>
 
-      </section>
+        <div id="projects" class="projects-header">
+            <h2 id='projects-header'>
+                Projects
+            </h2>
+        </div>
 
-    </article>
+        <div class="projects">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
 
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./assets/images/ccc-screenshot.png" style="width:100%">
+                    <div class="project-info">
+                        <h3>
+                            Covid Correlation Console 
+                        </h3>
+                        <a href="https://github.com/smoyamendez/covid-correlation-console" target="_blank"><button class="project-btn">REPO</button> </a>
+                        <a href="https://smoyamendez.github.io/covid-correlation-console/" target="_blank"><button class="project-btn">DEPLOYED</button></a>
+    
+                    </div>
+                </div>
 
-    <article>
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img src="./assets/images/panthers-quiz-screenshot.png" style="width:100%">
+                    <div class="project-info">
+                        <h3>
+                            Carolina Panthers Quiz 
+                            <a href="https://github.com/smoyamendez/carolina-panthers-trivia-quiz" target="_blank"><button class="project-btn">REPO</button></a>
+                            <a href="https://smoyamendez.github.io/carolina-panthers-trivia-quiz/" target="_blank"><button class="project-btn">DEPLOYED</button></a>
+                        </h3>
+                        
+    
+                    </div>
+                </div>
+                
 
-      <h2>
-        Projects
-      </h2>
+                <div class="mySlides fade">
+                    <img src="./assets/images/pw-generator-screenshot.png" style="width:100%">
+                    <div class="project-info">
+                        <h3>
+                            Password Generator 
+                            <a href="https://github.com/smoyamendez/password-generator" target="_blank"><button class="project-btn">REPO</button></a>
+                            <a href="https://smoyamendez.github.io/password-generator/" target="_blank"><button class="project-btn">DEPLOYED</button></a>
+                        </h3>
+                        
+                        
+                    </div>
+                </div>
 
-      <section id="projects">
-        <section class="project-block-large">
-          <h3>Covid Correlation Console/<a class="repoLink" href="https://github.com/smoyamendez/covid-correlation-console" target="_blank">Repo/</a><a class="repoLink" href="https://smoyamendez.github.io/covid-correlation-console/" target="_blank">Deployed</a></h3>
-          <a href="https://smoyamendez.github.io/covid-correlation-console/" target="_blank"><img
-              src="assets/images/ccc-screenshot.png" width="100%" height="100%" alt="Covid Correlation Console">
-          </a>
-          <a href="#">GitHub Repo</a>
-        </section>
+                <div class="mySlides fade">
+                    <img src="./assets/images/ghastly-grin.png" style="width:100%">
+                    <div class="project-info">
+                        <h3>
+                            Ghastly Grin 
+                            <a href="https://github.com/smoyamendez/Ghastly-Grin" target="_blank"><button class="project-btn">REPO</button></a>
+                            <a href="https://ghastlygrin.herokuapp.com/" target="_blank"><button class="project-btn">DEPLOYED</button></a>
+                        </h3>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
+        </div>
 
-        <section class="project-block">
-          <h3>Carolina Panthers Quiz/<a class="repoLink" href="https://github.com/smoyamendez/carolina-panthers-trivia-quiz" target="_blank">Repo/</a><a class="repoLink" href="https://smoyamendez.github.io/carolina-panthers-trivia-quiz/" target="_blank">Deployed</a></h3>
-          <a href="https://smoyamendez.github.io/carolina-panthers-trivia-quiz/" target="_blank"><img
-              src="assets/images/panthers-quiz-screenshot.png" width="100%" height="100%" alt="Carolina Panthers Quiz">
-          </a>
-        </section>
+        <!-- <div id="contact" class="contact-header">
+            <h2 id='contact-header'>
+                Contact
+            </h2>
+        </div> -->
 
-        <section class="project-block">
-          <h3>Password Generator/<a class="repoLink" href="https://github.com/smoyamendez/password-generator" target="_blank">Repo/</a><a class="repoLink" href="https://smoyamendez.github.io/password-generator/" target="_blank">Deployed</a></h3>
-          <a href="https://smoyamendez.github.io/password-generator/" target="_blank"><img
-              src="assets/images/pw-generator-screenshot.png" width="100%" height="100%" alt="Password Generator">
-          </a>
-        </section>
-      </section>
+        <!-- <div class="contact">
+            <div>
 
-    </article>
+                <ul>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:smoyamendez@gmail.com">smoyamendez@gmail.com</a>
+                    </li>
+    
+                    <li>
+                        <i class="fas fa-phone-square-alt"></i>
+                        <a href="tel:803-487-1881">803.487.1881</a>
+                    </li>
+    
+                    <li>
+                        <i class="fab fa-github-square"></i>
+                        <a href="https://github.com/smoyamendez" target="_blank">Github</a>
+                    </li>
+    
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/smoyamendez/" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
 
-
-    <article>
-      <h2>
-        Contact
-      </h2>
-
-      <section id="contact">
-
+    </main>
+    <footer id="contact">
         <ul>
-          <li>
-            <a href="mailto:smoyamendez@gmail.com">smoyamendez@gmail.com</a>
-          </li>
-
-          <li>
-            <a href="tel:803-487-1881">803.487.1881</a>
-          </li>
-
-          <li>
-            <a href="https://github.com/smoyamendez" target="_blank">Github</a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/smoyamendez/" target="_blank">LinkedIn</a>
-          </li>
+            <li>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:smoyamendez@gmail.com">smoyamendez@gmail.com</a> 
+            </li>
+            <li>|</li>
+            <li>
+                <i class="fas fa-phone-square-alt"></i>
+                <a href="tel:803-487-1881">803.487.1881</a>
+            </li>
+            <li>|</li>
+            <li>
+                <i class="fab fa-github-square"></i>
+                <a href="https://github.com/smoyamendez" target="_blank">Github</a>
+            </li>
+            <li>|</li>
+            <li>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/smoyamendez/" target="_blank">LinkedIn</a>
+            </li>
         </ul>
-
-      </section>
-    </article>
-
-    <!-- <article>
-      <h2>
-        Resume
-      </h2>
-
-      <section id="resume">
-
-        <a href="./assets/images/sommermoya-mendez-resume.pdf">Download PDF</a>
-
-      </section>
-    </article> -->
-  </main>
-
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
 </body>
-
 
 </html>
