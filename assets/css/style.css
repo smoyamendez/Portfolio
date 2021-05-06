@@ -698,6 +698,8 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 40px;
   }
   
   footer ul li {
@@ -705,6 +707,7 @@ main {
       padding: 4px;
 
   }
+  
 
   .mobile-hidden {
       display: none;
